@@ -1,0 +1,431 @@
+/*  regole di prassi*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    font-family: 'Aboreto', cursive;
+}
+
+a {
+    text-decoration: none;
+}
+p {
+    font-family: 'Maven Pro', sans-serif;
+    font-weight: 400;
+}
+
+
+/* INIZIO MENU */
+/* logo */
+#log { position: fixed; 
+    left: 3%; 
+    top: 3.5rem; 
+    z-index: 9999; 
+    font-size: 3em; 
+    color: #EEDD82;
+}
+
+
+/* inizio stile barre orrizontali del menu */
+.menu-toggle {
+    position: fixed;
+    z-index: 9999;
+    right: 5%;
+    top: 4rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    transition: 0.5s;
+}
+.menu-toggle.active {
+    transform: rotate(-180deg);
+}
+
+.menu-toggle span {
+    width: 100%;
+    height: 3px;
+    background-color:#EEDD82;
+}
+.menu-toggle.active span:nth-last-child(1) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(45deg);
+}
+.menu-toggle.active span:nth-last-child(2) {
+    opacity: 0;
+}
+.menu-toggle.active span:nth-last-child(3) {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) rotate(-45deg);
+}
+/*  fine stile barre orrizontali */
+
+/* inizio navigazione */
+.nav {
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    z-index: 100;
+    pointer-events: none;
+}
+.nav.active {
+    pointer-events: auto;
+}
+
+.nav-left {
+    position: relative;
+    z-index: 10;
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-color: white;
+    transition: 0.8s;
+}
+.nav-left.active {
+    left: 0;
+    transition: 1.5s;
+}
+
+.nav-left ul {
+    position: relative;
+    top: 25%;
+    left: 0%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.nav-right {
+    position: absolute;
+    z-index: 9;
+    left: -50%;
+    top: 0;
+    width: 50%;
+    height: 100vh;
+    background-image: url("https://www.atelier-eme.com/on/demandware.static/-/Library-Sites-AtelierEmeContentLibrary/default/dwfbaabdb6/all_CostumerService_CW1622_Image01_eme.jpg");
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: 0.8s;
+}
+.nav-right.active {
+    left:50%;
+    transition: 2s;
+}
+
+.nav-links {
+    position: relative;
+    left: -10%;
+    text-decoration: none;
+    list-style: none; 
+    width: 55%; 
+    margin: 0 auto; 
+    display: block;
+    transition: 1s ease-in; 
+    position: relative; 
+    font-size: 2em;
+    text-align: center;
+
+}
+.nav-links.active {
+    position: relative;
+    transition: 0.5s ease-out;
+    left: 0;
+}
+.nav-links a {
+    color: black; 
+}
+.nav-links a:hover {
+    color: #EEDD82; 
+    
+}
+/* FINE MENU */
+
+
+/* HOME CONTAINER */
+
+.container_Home, .container_Eme, .container_Sposa, .container_Cerimonia {
+    width: 100vw;
+    margin-bottom: 15vh;
+}
+/*  SEZIONI [parti di cui è composto il sito]  */
+/*  inizio prima sezione */
+.Fcontainer { 
+    width: 100%; 
+    height: 100vh;  
+    position: relative; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Library-Sites-AtelierEmeContentLibrary/default/dwba381c06/home-component/Cover/all_HP_Cover_CW3922_HeroBanner_StyleOffice_eme.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center top;
+}
+
+h1 { 
+    position: absolute; 
+    z-index: 10; 
+    font-size: 5em; 
+    color: white; 
+    font-weight: lighter;
+}
+/*  fine prima sezione */
+
+/*  inizio seconda sezione */
+.Scontainer { 
+    width: 100%; 
+    height: 40vh; 
+    box-shadow: 0px 35px 20px gray; 
+    display: flex; 
+    justify-content: center; 
+    flex-direction: column;
+    align-items: center;
+    vertical-align: middle; 
+    margin-bottom: 15vh; 
+    background-color: white; 
+    position: relative;
+}
+
+h2 { 
+    font-size: 3em; 
+    font-weight: lighter; 
+    overflow-y: hidden;
+    height: 10vh;
+}
+
+.Scontainer p { 
+    width: 70%; 
+    margin-top: 2vh; 
+    text-align: center;
+    font-size: 1em;
+}
+/*  fine seconda sezione*/
+   
+/* inizio terza sezione   (tessere)*/
+.Tcontainer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10vh;
+    
+}
+
+.LeftcardsContainer, .RightcardsContainer {
+    width: 100%;
+    height: 95vh;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    padding-bottom: 7vh;
+    padding-top: 7vh;
+    margin-bottom: 2%;
+
+}
+.LeftcardsContainer img {
+    width: 50vw;
+    height: 85%;
+    border-radius: 10px;
+    position: relative;
+    left: -1vw;
+    box-shadow: 20px 20px 20px gray; 
+}
+.RightcardsContainer img  {
+    width: 50vw;
+    height: 85%;
+    border-radius: 10px;
+    position: relative;
+    right: -1vw;
+    box-shadow: 15px 15px 15px gray; 
+}
+.cards-text {
+    width: 50vw;
+    text-align: center;
+    height: 65%;
+    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+.cards-text p, h3 {
+    max-width: 80%;
+}
+.cards-text p {
+    font-size: 0.9em;
+}
+.cards-text h3 {
+
+    font-size: 2em;
+}
+.button {
+    width: 40%;
+    padding: 1% 1% ;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+}
+.button:hover {
+  
+   background: white;
+   border: 1px solid #EEDD82;
+   color: black;
+   font-style: oblique;
+   box-shadow: 20px 20px 20px gray; 
+   transition: 1s ease-in;
+}
+
+/* fine terza sezione*/
+
+
+
+/* inizio quarta sezione  */
+
+.Fourthcontainer {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.activity_container {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 5vh;
+    position: relative;
+
+}
+.slide {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.upper {
+    margin-bottom: 2vh;
+}
+.activities {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: left;
+    padding: 2%;
+    
+}
+.buttonBis {
+    width: 15%;
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 2%;
+
+}
+.activities h2 {
+    color: white;
+    font-size: 2em;
+}
+.PinkColections {
+    background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Sites-AE_EC_COM/default/dw3f85679a/images/PABL636RO035-M.jpg?sw=600&sfrm=jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.PinkColections:hover {
+    background-position: center;
+    transition: 1.5s; 
+}
+.Bordeaux {
+    background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Sites-AE_EC_COM/default/dw18c7655c/images/PGOM028BX001-M.jpg?sw=600&sfrm=jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.Bordeaux:hover {
+    background-position: center;
+    transition: 1.5s; 
+}
+.BlueColections {
+    background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Sites-AE_EC_COM/default/dw402bcc59/images/PABL585BL015-M.jpg?sw=600&sfrm=jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.BlueColections:hover {
+    background-position: center;
+    transition: 1.5s; 
+}
+.Sea_SaltColections {
+    background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Sites-AE_EC_COM/default/dw569f2d70/images/PABL636AZ003-M.jpg?sw=1000&sfrm=jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+}
+.Sea_SaltColections:hover {
+    background-position: center;
+    transition: 1.5s; 
+}
+
+
+
+
+/* footer */
+
+
+footer {
+    width: 100vw;
+    height: 60vh;
+}
+.footer_container {
+    width: 100%;
+    height: 55vh;
+    background-color: #fae8e5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 4%;
+}
+footer .containers {
+    width: calc(100% / 4 - 5% - 5%);
+    height: 80%;
+    color: black;
+    margin: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.containers a {
+    font-size: 0.8em;
+    text-decoration: none;
+    color: black;
+
+}
+
+.diritti_riservati {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    font-size: 0.8em;
+}
