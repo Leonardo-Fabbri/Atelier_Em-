@@ -1,4 +1,22 @@
 @media screen and (min-width: 600px) and (max-width: 1024px) {
+    .nav-right {
+      display: none;
+    }
+    .nav-left {
+        width: 100%;
+        left: -100%;
+        background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Library-Sites-AtelierEmeContentLibrary/default/dwcaec34cc/home-component/Cover/01_all_HP_2_Cover_accessoribright_eme.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    
+    }
+    .nav-links a {
+        color: white;
+    }
+
+    /* prima sezione */
     .Fcontainer { 
         width: 100%; 
         height: 100vh;  
