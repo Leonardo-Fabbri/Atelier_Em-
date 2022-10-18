@@ -19,10 +19,9 @@
     }
     h2 { 
         font-size: 2.2em; 
-        font-weight: lighter; 
         overflow-y: hidden;
         height: 7vh;
-        font-weight: 200;
+        font-weight: bold;
     }
     .Scontainer p { 
         width: 90%; 
@@ -46,6 +45,7 @@
     }
     .LeftcardsContainer img, .RightcardsContainer img {
        width: 60vw;
+       height: 100%;
        position: static;        
        margin-bottom: 5vh;
     }
