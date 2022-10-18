@@ -18,7 +18,7 @@
         
     }
     h2 { 
-        font-size: 2.2em; 
+        font-size: 2.4em; 
         overflow-y: hidden;
         height: 7vh;
         font-weight: bold;
@@ -56,5 +56,23 @@
     .cards-text p, h3 {
         max-width: 100%;
     }
-    
+    .button {
+        width: 40%;
+        padding: 2% 2% 
+    }
+
+    /* quarta sezione */
+    .activity_container {
+        width: 70%;
+    }
+    .buttonBis {
+        width: 30%;
+        background-color: white;
+        color: black;
+        text-align: center;
+        padding: 2%;
+    }
+    .activities h2 {
+       margin-bottom: 5%;
+    }
 }
