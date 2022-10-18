@@ -22,6 +22,7 @@
         font-weight: lighter; 
         overflow-y: hidden;
         height: 7vh;
+        font-weight: 200;
     }
     .Scontainer p { 
         width: 90%; 
@@ -44,8 +45,13 @@
         flex-direction: column-reverse;
     }
     .LeftcardsContainer img, .RightcardsContainer img {
+       width: 60vw;
        position: static;        
        margin-bottom: 5vh;
+    }
+    .cards-text h3 {
+        font-size: 1.9em;
+        font-weight: 100;
     }
     .cards-text p, h3 {
         max-width: 100%;
