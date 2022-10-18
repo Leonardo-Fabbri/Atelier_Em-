@@ -1,0 +1,42 @@
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    /* seconda sezione */
+    .Scontainer { 
+        width: 100%; 
+        height: 30vh;
+        
+    }
+    h2 { 
+        font-size: 2.2em; 
+        font-weight: lighter; 
+        overflow-y: hidden;
+        height: 7vh;
+    }
+    .Scontainer p { 
+        width: 90%; 
+        margin-top: 0.5vh; 
+        text-align: center;
+    }
+
+    /*terza sezione */
+    .LeftcardsContainer, .RightcardsContainer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 7vh;
+        padding-top: 7vh;
+        margin-bottom: 2%;
+    }
+    .RightcardsContainer {
+        flex-direction: column-reverse;
+    }
+    .LeftcardsContainer img, .RightcardsContainer img {
+       position: static;        
+       margin-bottom: 5vh;
+    }
+    .cards-text p, h3 {
+        max-width: 100%;
+    }
+    
+}

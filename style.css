@@ -153,7 +153,7 @@ p {
 
 /* HOME CONTAINER */
 
-.container_Home, .container_Eme, .container_Sposa, .container_Cerimonia {
+.container_Home{
     width: 100vw;
     margin-bottom: 15vh;
 }
