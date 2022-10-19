@@ -89,6 +89,7 @@
     }
     .activity_container {
         width: 70%;
+        margin-top:0vh;
     }
     .buttonBis {
         width: 40%;
@@ -102,5 +103,6 @@
        margin-bottom: 10%;
        font-size: 1.5em;
     }
+   
  
 }
