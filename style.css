@@ -177,6 +177,7 @@ h1 {
     font-size: 5em; 
     color: white; 
     font-weight: lighter;
+    text-align: center;
 }
 /*  fine prima sezione */
 
@@ -193,6 +194,7 @@ h1 {
     margin-bottom: 15vh; 
     background-color: white; 
     position: relative;
+    text-align: center;
 }
 
 h2 { 

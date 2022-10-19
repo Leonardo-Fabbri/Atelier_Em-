@@ -1,0 +1,53 @@
+@media screen and (min-width: 320px) and (max-width:599px) {
+    
+    .nav-right {
+        display: none;
+    }
+    .nav-left {
+        width: 100%;
+        left: -100%;
+        background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Sites-AE_EC_COM/default/dwed18bd3f/images/AACC063AG0NE-FI.jpg?sw=600&sfrm=jpeg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+    
+    }
+    .nav-links a {
+        color: white;
+    }
+
+    h2 { 
+        font-size: 2.4em; 
+        overflow-y: hidden;
+        height: 7vh;
+        font-weight: bold;
+    }
+    .cards-text h3 {
+        font-size: 1.9em;
+        font-weight: 100;
+    }
+
+
+     /*terza sezione */
+     .LeftcardsContainer, .RightcardsContainer {
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 7vh;
+        padding-top: 7vh;
+        margin-bottom: 2%;
+    }
+    .RightcardsContainer {
+        flex-direction: column-reverse;
+    }
+    .LeftcardsContainer img, .RightcardsContainer img {
+       width: 65vw;
+       height: 100%;
+       position: static;        
+       margin-bottom: 5vh;
+    }
+    
+}
