@@ -106,3 +106,22 @@
    
  
 }
+
+@media screen and (min-width: 1025px) and (max-width:1400px) {
+    .Fcontainer { 
+        width: 100%; 
+        height: 100vh;  
+        display: flex; 
+        justify-content: center; 
+        align-items: center; 
+        background-image: url("https://www.atelier-eme.com/dw/image/v2/BCXQ_PRD/on/demandware.static/-/Library-Sites-AtelierEmeContentLibrary/default/dwba381c06/home-component/Cover/all_HP_Cover_CW3922_HeroBanner_StyleOffice_eme.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment:scroll;
+        background-position: center;
+    }
+    .buttonBis {
+        width: 30%;
+        border: 1px solid #EEDD82;
+    }
+}
