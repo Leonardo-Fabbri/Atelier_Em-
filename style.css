@@ -224,7 +224,7 @@ h2 {
 
 .LeftcardsContainer, .RightcardsContainer {
     width: 100%;
-    height: 95vh;
+    height: 95%;
     display: inline-flex;
     flex-direction: row;
     align-items: center;

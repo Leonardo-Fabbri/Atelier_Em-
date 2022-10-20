@@ -7,8 +7,6 @@ let navLeft = document.querySelector('.nav-left')
 let navRight = document.querySelector('.nav-right');
 let navLinks = Array.from(document.querySelectorAll('.nav-links'));
 
-
-
 // VIENE CREATA UNA FUNZIONE. 'ON CLICK' su 'LET menuTog' = ".menu-toggle", -
 //- si attivano tutte le classi che permettono l'animazione del menu
 menuTog.addEventListener('click', () => {
@@ -45,6 +43,5 @@ menuTog.addEventListener('click', () => {
 
 
 })
-
 
 
